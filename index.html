@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1><span>HORÓSCOPO</span> DO ZODÍACO</h1>
+    </header>
+    
+    <input type="text" id="signos">
+    <button onclick="escolhaSigno()">Buscar</button>
+
+    <div id="frase"></div>
+    <div id="imagem">
+        <img id="img01" src=""  alt=""  width="150">
+    </div>
+
+
+
+
+    <script>
+        function escolhaSigno() {
+            var texto
+            var signo = document.querySelector("#signos").value
+            var imagem = document.getElementById('img01')
+            
+            switch(signo){
+
+                case "Áries":
+                    texto = "Quem tem Sol no signo de Áries pode se identificar com características como a impulsividade e a coragem. Sabe aquela galera que não tem medo de nada? Provavelmente tem Áries forte no Mapa. Eles também amam motivar quem está ao seu redor e são guerreiros por natureza  " 
+
+                    if (escolhaSigno <= "Áries") {
+                        document.body.style.backgroundImage = 'url(https://i.pinimg.com/originals/30/2b/51/302b51b854a74b3a4394d7246ba8f88b.png)'
+                        document.body.style.backgroundSize = 'cover'
+                       
+                    }
+                    imagem.src = "https://pm1.narvii.com/7602/87d20e245b51bbc8449c53a9b8125b63b80d95a0r1-704-880v2_00.jpg"
+                    break
+
+                    case "Touro":
+                     texto = "Quem nasce com o sol no signo Touro pode se identificar com virtudes como a paciência, o bom gosto e a sensualidade. Afeto e valorização do prazer e conforto também podem ser características de Touro, mas sabe aquela galera meio teimosa? Pode ser que tenham o signo de Touro forte no Mapa também..."
+
+                     if (escolhaSigno >= "Touro") {
+                        document.body.style.backgroundImage = 'url(https://pbs.twimg.com/media/C2KDzXjWgAEDIgO.jpg:large)'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = " https://pm1.narvii.com/7603/5461936fde29b09399e62f83ba1b0e84f4645527r1-704-880v2_00.jpg"
+                     break
+                
+                     case "Gêmeos":
+                    texto = "Quem nasce com o sol no signo de Gêmeos geralmente se identifica com características como a curiosidade, a inteligência e o desejo de liberdade. Sabe aquela galera que ama ler, aprender coisas novas, puxar conversa e fazer novas amizades? Provavelmente tem gêmeos signo forte no mapa. "
+                    if (escolhaSigno >= "Gêmeos") {
+                        document.body.style.backgroundImage = 'url( https://img.ibxk.com.br/2022/03/02/02143112108432.jpg?ims=328x)'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = "https://i.pinimg.com/736x/e4/cb/f7/e4cbf709c201e111238ecc3a8f2c7460.jpg"
+                    break
+
+                    case "Câncer":
+                    texto = " Quem nasce com o sol no signo de Câncer pode se identificar com características como a sensibilidade e o carinho. Um canceriano ou canceriana típicos costumam ter uma ótima intuição, além de um forte vínculo com seus familiares. A busca constante por segurança também é uma característica do signo de câncer. "
+
+                    if (escolhaSigno >= "Câncer") {
+                        document.body.style.backgroundImage = 'url(https://i.pinimg.com/originals/25/cf/a0/25cfa0148206d891694777f6cd2d4e73.jpg )'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = "https://i.pinimg.com/originals/90/98/0d/90980da0a5ae9c6e3b248bd03a6e340e.jpg"
+                    break
+
+                    case "Leão":
+                    texto = " Quem nasce com o sol no signo Leão pode se identificar com características como a criatividade e a coragem. Sabe aquela galera com a autoestima lá em cima? Provavelmente tem Leão signo forte no mapa. A generosidade e o otimismo também podem ser bem presentes.  "
+
+                    if (escolhaSigno >= "Leão") {
+                        document.body.style.backgroundImage = 'url( https://i.pinimg.com/originals/ba/40/24/ba4024d27844f24faf12dc797db8c9ac.jpg )'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = " https://i.pinimg.com/236x/2f/28/b6/2f28b66f347a9d70c069383df92490dc.jpg "
+                    break
+
+                    case "Virgem":
+                    texto = "Quem nasce com o Sol no signo Virgem pode se identificar com características como a objetividade e a organização. Virginianas e virginianos típicos costumam buscar constantemente a perfeição e identificar facilmente detalhes que passam despercebidos por todos os outros, essa é uma das características de Virgem mais admiradas."
+
+                    if (escolhaSigno >= "Virgem") {
+                        document.body.style.backgroundImage = 'url( https://sm.ign.com/t/ign_br/screenshot/default/shaka-de-virgem-meditand_kq84.1200.jpg )'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrwhIXhqZS_8KQSsZSa2EZLh4Qr5PFDzDr5Rv-DQic8wVB47hwfay-2W9XBBAZKpzAKhQ&usqp=CAU "
+                    break
+
+                    case "Libra":
+                    texto = "Quem nasce com o sol no signo Libra, em geral, se identifica com características como a cortesia, a delicadeza e a busca constante pelo equilíbrio. Librianas e librianos típicos adoram viver relacionamentos e tendem a ter um pouco de dificuldade para tomar decisões. "
+
+                    if (escolhaSigno >= " Libra ") {
+                        document.body.style.backgroundImage = 'url( https://sm.ign.com/ign_br/screenshot/default/03_6w5b.jpg )'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFl7ExbXy1M7rZ0oRe8XSvLxkN17QcKKotlAlX9b_lgkRj50Tba_hcuWsLOS0x-RBUkVE&usqp=CAU "
+                    break
+
+                    case "Escorpião":
+                    texto = "Quem nasce com o sol no signo Escorpião pode se identificar com características como a intensidade e o poder de transformação. Escorpianas e escorpianos típicos costumam ser bastante passionais e muito generosos. O espírito de detetive e o sexto sentido afiado também são bem marcantes em quem tem escorpião forte no mapa também."
+
+                    if (escolhaSigno >= " Escorpião ") {
+                        document.body.style.backgroundImage = 'url( https://i.pinimg.com/originals/18/3e/ed/183eed686cac84d2d2bde944c9a053a8.jpg )'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = " https://i.pinimg.com/236x/e3/34/b5/e334b560a0bff78f10a1bdbd4d3143aa.jpg "
+                    break
+
+                    case "Sagitário":
+                    texto = "Quem nasce com o sol no signo de Sagitário pode se identificar com características como o otimismo e o desejo de liberdade. Sagitarianas e sagitarianos típicos costumam ser viajantes e, geralmente, enxergam o mundo inteiro como sua casa. A jovialidade também é uma característica marcante de Sagitário."
+
+                    if (escolhaSigno >= " Sagitário ") {
+                        document.body.style.backgroundImage = 'url(https://bandaicollectors.com.mx/blog/wp-content/uploads/2020/05/Aioros-de-Sagitario-10-Cosas-que-no-sabias-de-e%CC%81l-0-1024x576.png )'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = " https://i.pinimg.com/236x/3d/74/c2/3d74c2bb32f5ed65da9b806d597fa4ac.jpg "
+                    break
+
+                    case "Capricórnio":
+                    texto = "Quem tem Sol em Capricórnio pode se identificar com virtudes como persistência e responsabilidade. Capricórnio signo costuma ter metas bem definidas e noção dos seus limites. A relação próxima com o trabalho também pode ser uma característica de capricórnio bem marcante."
+
+                    if (escolhaSigno >= " Capricórnio ") {
+                        document.body.style.backgroundImage = 'url( https://pm1.narvii.com/6882/154a0219e1aaf069a616445779c381066f1a94fbr1-736-491v2_uhq.jpg )'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = " https://i.pinimg.com/236x/b0/68/ef/b068efacaeed861de088b9a435a3f371.jpg "
+                    break
+
+                    case "Aquário":
+                    texto = "O céu do dia oportuniza ações colaborativas em atendimento às demandas, embora diante de desafios pessoais seja preciso atuar com discrição. Lazeres culturais ganham corpo com Vênus na casa social. No amor, a Lua agora aponta para algumas oscilações de humor que podem comprometer o equilíbrio da sua vida amorosa. Mesmo que certos problemas corriqueiros tomem proporção maior, resista a qualquer atitude grosseira."
+
+                    if (escolhaSigno >= " Aquário ") {
+                        document.body.style.backgroundImage = 'url( https://kanto.legiaodosherois.com.br/w760-h398-cfill/wp-content/uploads/2020/10/legiao_dcubnmOqiW3F.jpg.webp )'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Bvq9LjbHoPw7w3pHdvZhpMdUHANMYWjwm8BmNsdw-bIdrsX_vlTg0O-xGqWJkbI_lxM&usqp=CAU "
+                    break
+
+                    case "Peixes":
+                    texto = "Quem nasce com o sol no signo de Peixes pode se identificar com virtudes como a sensibilidade e a intuição. Piscianos e piscianas típicos costumam ser bastante solidários e muitas vezes têm uma forte conexão com a espiritualidade. Por serem bastante sonhadores, se iludir com certa facilidade também é uma característica de Peixes."
+
+                    if (escolhaSigno >= " Peixes ") {
+                        document.body.style.backgroundImage = 'url( https://s.aficionados.com.br/imagens/image-1683_cke.jpg )'
+                        document.body.style.backgroundSize = 'cover'
+                    }
+                    imagem.src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDSFwRMRHUxVlsTIdXN0nGQF24mp5GFyVnwrKpUCp_vbeFwKwMLTNiDno91ZqdNIEsyzk&usqp=CAU "
+                    break
+
+
+                default: texto = "Insira um sigino existente"
+            }
+
+            document.getElementById('frase').innerHTML = texto
+
+        }
+    </script>
+
+</body>
+</html>

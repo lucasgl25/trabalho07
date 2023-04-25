@@ -1,0 +1,65 @@
+@font-face{
+    font-family:Black_Han_Sans;
+    src: url(Black_Han_Sans/BlackHanSans-Regular.ttf);
+}
+
+body{
+    background-image: url(https://sm.ign.com/ign_br/screenshot/default/119350alfabetajuega-saint-seiya-240815-1_rv3x.jpg);
+    background-size: cover;
+
+   }
+
+   h1{
+    margin-right: 130VH;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.711);
+    color: yellow;
+    text-shadow: 2px 1px 6px red;
+    font-size: 65px;
+    font-family: Rowdies;
+    padding: 10PX;
+   }
+   .main-header h1 span{
+    color:rgb(38, 0, 255);
+   }
+
+   input{
+    text-align: center;
+    font-size: 30px;
+    border: solid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.711);    
+    color: yellow;
+    text-shadow: 2px 1px 6px red;
+   }
+
+   button{
+    text-align: center;
+    border: solid;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.803);
+    color: yellow;
+    text-shadow: 2px 1px 6px red;
+    
+    
+}
+button:hover{
+    background-image: linear-gradient(to top, rgb(255, 255, 255), #000000); 
+}
+
+#frase{
+    text-align:justify;
+    background-color: rgba(0, 0, 255, 0.711);
+    font-size: 25px;
+    border-radius: 5px;
+    color: yellow;
+    text-shadow: 2px 1px 6px red;
+    margin: 5px;
+  
+    
+}
+
+
